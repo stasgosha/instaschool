@@ -1,0 +1,56 @@
+.cert-section{
+	background: url(../img/backgrounds/cert-section-bg.jpg) no-repeat center top;
+	padding: 75px 0 185px;
+
+	.sc-subtitle{
+		max-width: 620px;
+	}
+
+	.sc-title{
+		@media screen and (min-width: 640px){
+			br{
+				display: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 639px){
+		background: url(../img/backgrounds/cert-section-bg-480.jpg) no-repeat center top;
+		padding: 45px 0;
+		height: 506px;
+
+		.section-caption{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.certificate{
+	width: 100%;
+	max-width: 560px;
+	position: relative;
+	margin: 0 auto;
+
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		padding-top: 4.3088%;
+		background: url(../img/certificate/cert-shadow.png) no-repeat center top;
+		background-size: contain;
+	}
+
+	@media screen and (max-width: 639px){
+		max-width: 340px;
+	}
+}

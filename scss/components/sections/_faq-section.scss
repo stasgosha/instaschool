@@ -1,0 +1,25 @@
+.faq-section{
+	padding: 75px 0 80px;
+
+	@media screen and (max-width: 639px){
+		padding: 15px 0 35px;
+
+		.section-caption{
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.faq-list{
+	width: 100%;
+	max-width: 754px;
+	margin: 0 auto;
+
+	.item{
+		border-top: 1px solid $primary;
+
+		&:last-child{
+			border-bottom: 1px solid $primary;
+		}
+	}
+}

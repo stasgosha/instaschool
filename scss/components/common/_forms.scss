@@ -1,0 +1,93 @@
+.form-field{
+	.input-field{
+		border: 0;
+		height: 49px;
+		width: 100%;
+		font-size: 16px;
+		color: #fff;
+		font-weight: 900;
+		padding: 0 18px;
+		outline: none !important;
+		transition: all $t;
+		background: transparent;
+		font-family: $main-font;
+		appearance: none;
+		border-radius: 25px;
+		border: 2px solid #fff;
+
+		&::placeholder{
+			color: #fff;
+			transition: all $t;
+		}
+
+		&:focus{
+			background: #fff;
+			color: $text-color;
+			border-color: $primary;
+
+			&::placeholder{
+				color: $text-color;
+			}
+		}
+	}
+}
+
+.checkbox{
+	display: block;
+
+	.checkbox-label{
+		display: block;
+		position: relative;
+		padding-left: 30px;
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 1.2;
+		color: #fff;
+
+		a{
+			color: $primary;
+			text-decoration: underline;
+
+			&:hover,
+			&:focus{
+				outline: none !important;
+				text-decoration: none;
+			}
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			width: 16px;
+			height: 16px;
+			border: 2px solid #fff;
+			box-sizing: border-box;
+			position: absolute;
+			left: 0;
+			top: 0px;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			width: 6px;
+			height: 4px;
+			border-left: 3px solid $primary;
+			border-bottom: 3px solid $primary;
+			position: absolute;
+			top: 3px;
+			left: 4px;
+			opacity: 0;
+			transition: all $t;
+		}
+	}
+
+	input:checked{
+		+ .checkbox-label{
+			&:after{
+				transform: rotate(-45deg);
+				opacity: 1;
+			}
+		}
+	}
+}

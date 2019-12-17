@@ -1,0 +1,35 @@
+.btn{
+	border: 0;
+	color: #fff;
+	color: $text-color;
+	font-weight: 900;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 13px 25px;
+	border-radius: 25px;
+	background: $primary;
+	font-family: $main-font;
+	display: inline-block;
+	transition: all $t;
+	cursor: pointer;
+	appearance: none;
+	min-width: 265px;
+	text-transform: uppercase;
+
+	&:focus{
+		outline: none;
+	}
+
+	&:hover,
+	&:focus{
+		color: $primary;
+		background: $accent;
+		// background: darken($primary, 10%);
+		// transform: scale(1.02);
+	}
+
+	@media screen and (max-width: 959px){
+		min-width: 300px;
+	}
+}

@@ -1,0 +1,36 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/assist";
+@import "components/layout";
+@import "components/typography";
+@import "icons";
+
+// Header
+@import "components/header/header";
+
+// Sections
+@import "components/sections/first-screen-section";
+@import "components/sections/about-course-section";
+@import "components/sections/access-section";
+@import "components/sections/why-photography-section";
+@import "components/sections/courses-section";
+@import "components/sections/course-results";
+@import "components/sections/cert-section";
+@import "components/sections/gallery-section";
+@import "components/sections/why-we-section";
+@import "components/sections/pricing-section";
+@import "components/sections/risk-section";
+@import "components/sections/registration-section";
+@import "components/sections/faq-section";
+
+// Footer
+@import "components/footer/footer";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/menu-opener";
+@import "components/common/phones-list";
+@import "components/common/accordion";
+@import "components/common/modals";
+@import "components/common/big-lesson-card";

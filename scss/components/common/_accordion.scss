@@ -1,0 +1,67 @@
+.accordion{
+	.ac-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		padding: 20px 0;
+	}
+
+	.ac-question{
+		font-size: 24px;
+		line-height: 1.25;
+		font-weight: bold;
+		color: $text-color;
+	}
+
+	.opener{
+		width: 17px;
+		height: 17px;
+		appearance: none;
+		cursor: pointer;
+		display: block;
+		border: 0;
+		flex: none;
+		background: transparent;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17px' height='17px'%3e%3cpath fill-rule='evenodd' fill='rgb(255, 212, 48)' d='M17,10 L10,10 L10,16.999 L7,16.999 L7,10 L0,10 L0,7 L7,7 L7,-0 L10,-0 L10,7 L17,7 L17,10 Z'/%3e%3c/svg%3e");
+
+		&:focus{
+			@include addFocusBorder();
+		}
+	}
+
+	.ac-content{
+		padding: 5px 0 25px;
+		display: none;
+
+		p{
+			max-width: 670px;
+		}
+	}
+
+	&.opened{
+		.opener{
+			transform: rotate(135deg);
+		}
+	}
+
+	@media screen and (max-width: 959px){
+		.ac-content{
+			padding-right: 80px;
+		}
+	}
+
+	@media screen and (max-width: 639px){
+		.ac-header{
+			padding: 13px 0;
+		}
+
+		.ac-question{
+			font-size: 21px;
+		}
+
+		.ac-content{
+			padding: 5px 0 15px;
+		}
+	}
+}

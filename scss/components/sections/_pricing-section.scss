@@ -1,0 +1,17 @@
+.pricing-section{
+	padding: 75px 0 40px;
+
+	.section-caption{
+		margin-bottom: 25px;
+	}
+
+	@media screen and (max-width: 639px){
+		// padding-top: 55px;
+		padding-top: 0;
+
+		.left-decoration,
+		.right-decoration{
+			display: none;
+		}
+	}
+}
